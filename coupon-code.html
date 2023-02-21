@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coupon code</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <!--css plugin-->
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <link rel="stylesheet" href="css/jquery.nouislider.css"/>
+    <link rel="stylesheet" href="css/jquery.popupcommon.css"/>
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-dark.css">
+    <link rel="stylesheet" href="css/style-gray.css">
+
+    <link rel="stylesheet" href="css/res-menu.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+
+</head>
+<body class="gray"><!--<div class="alert_w_p_u"></div>-->
+
+<div class="container-page">
+    <div class="mp-pusher" id="mp-pusher">
+        <header class="mod-header">
+            <div class="grid_frame">
+                <div class="container_grid clearfix">
+                    <div class="grid_12">
+                        <div class="header-content clearfix">
+                            <h1 id="logo" class="rs">
+                                <a href="index.html">
+                                    <img src="images/logo.png" alt="$SITE_NAME"/>
+                                </a>
+                            </h1>
+                            <a id="sys_head_login" class="btn btn-green type-login btn-login" href="login.html">Login</a>
+                            <nav class="main-nav">
+                                <ul id="main-menu" class="nav nav-horizontal clearfix">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="coupon.html">Coupons</a>
+                                    </li>
+                                    <li>
+                                        <a href="coupon-code.html">Coupons Code</a>
+                                    </li>
+                                    <li>
+                                        <a href="about_us.html">About Us</a>
+                                    </li><!---class="has-sub" for -->
+                                </ul>
+                                <a id="sys_btn_toogle_menu" class="btn-toogle-res-menu" href="#alternate-menu"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header><!--end: header.mod-header -->
+
+        <nav id="mp-menu" class="mp-menu alternate-menu">
+            <div class="mp-level">
+                <h2>Menu</h2>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="coupon.html">Coupons</a>
+                    </li>
+                    <li>
+                        <a href="coupon-code.html">Coupons Code</a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">About Us</a>
+                    </li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav><!--end: .mp-menu -->
+        <div class="top-area">
+            <div class="grid_frame">
+                <div class="container_grid clearfix">
+                    <div class="grid_12">
+                        <h2 class="page-title">Coupon Code</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sys_mod_filter" class="mod-filter">
+            <div class="grid_frame">
+                <div class="container_grid clearfix">
+                    <div class="grid_12">
+                        <div class="lbl-search">
+                            <input class="txt-search" id="sys_txt_search" type="search" placeholder="Search"/>
+                            <input type="submit" class="btn-search" value=""/>
+                        </div>
+                        <div class="select-cate">
+                            <div id="sys_selected_val" class="show-val">
+                                <span data-cate-id="0">All type</span>
+                                <i class="pick-down"></i>
+                            </div>
+                            <div id="sys_list_dd_cate" class="dropdown-cate">
+                                <div class="first-lbl">All Categories</div>
+                                <div class="wrap-list-cate clearfix">
+                                    <a href="#" data-cate-id="1">Baby & Toddler</a>
+                                    <a href="#" data-cate-id="2">Automotive </a>
+                                    <a href="#" data-cate-id="3">Beverages</a>
+                                    <a href="#" data-cate-id="4">Books & Magazines</a>
+                                    <a href="#" data-cate-id="5">Foods </a>
+                                    <a href="#" data-cate-id="6">Health Care</a>
+                                    <a href="#" data-cate-id="7">Home Entertainment</a>
+                                    <a href="#" data-cate-id="8">Personal Care </a>
+                                    <a href="#" data-cate-id="9">Pet Care </a>
+                                    <a href="#" data-cate-id="10">Professional Services </a>
+                                    <a href="#" data-cate-id="11">Toys and Games</a>
+                                    <a href="#" data-cate-id="12">Coupon Codes</a>
+                                    <a href="#" data-cate-id="13">Recipes</a>
+                                    <a href="#" data-cate-id="14">Household </a>
+                                </div>
+                            </div>
+                        </div><!--end: .select-cate -->
+                        <div class="range-days-left">
+                            <span class="lbl-day">Days left</span>
+                            <span id="sys_min_day" class="min-day"></span>
+                            <div id="sys_filter_days_left" class="filter-days"></div>
+                            <span id="sys_max_day" class="max-day"></span>
+                        </div><!--end: .range-days-left -->
+                        <input id="sys_apply_filter" class="btn btn-red type-1 btn-apply-filter" type="button" value="Apply Filter">
+                    </div>
+                </div>
+            </div>
+        </div><!--end: .mod-filter -->
+        <div class="grid_frame page-content">
+            <div class="container_grid">
+                <div class="layout-2cols clearfix">
+                    <div class="grid_8 content">
+                        <div class="mod-coupons-code">
+                            <div class="wrap-list">
+                                <div class="coupons-code-item right-action flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-05.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
+                                        <p class="rs coupon-desc">Must book by 11:59PM IST on 11/17/22. Travel completed by 3/30/24.</p>
+                                        <div class="bottom-action">
+                                            <div class="left-vote">
+                                                <span class="lbl-work">100% work</span>
+                                                <span>
+                                                    <span class="lbl-vote">321 <i class="icon iAddVote"></i></span>
+                                                    <span class="lbl-vote">5 <i class="icon iSubVote"></i></span>
+                                                </span>
+                                            </div>
+                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                        </div>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                                <div class="coupons-code-item right-action flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-06.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
+                                        <p class="rs coupon-desc">Must book by 11:59PM IST on 11/17/22. Travel completed by 3/30/24.</p>
+                                        <div class="bottom-action">
+                                            <div class="left-vote">
+                                                <span class="lbl-work">100% work</span>
+                                                <span>
+                                                    <span class="lbl-vote">34 <i class="icon iAddVote"></i></span>
+                                                    <span class="lbl-vote">8 <i class="icon iSubVote"></i></span>
+                                                </span>
+                                            </div>
+                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                        </div>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                                <div class="coupons-code-item right-action flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-04.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 20%-50% Off All Vitamin World Brand Items</a></p>
+                                        <p class="rs coupon-desc">Must book by 11:59PM IST on 11/17/22. Travel completed by 3/30/24.</p>
+                                        <div class="bottom-action">
+                                            <div class="left-vote">
+                                                <span class="lbl-work">100% work</span>
+                                                <span>
+                                                    <span class="lbl-vote">59 <i class="icon iAddVote"></i></span>
+                                                    <span class="lbl-vote">21 <i class="icon iSubVote"></i></span>
+                                                </span>
+                                            </div>
+                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                        </div>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                                <div class="coupons-code-item right-action flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-02.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
+                                        <p class="rs coupon-desc">Must book by 11:59PM IST on 11/17/22. Travel completed by 3/30/24.</p>
+                                        <div class="bottom-action">
+                                            <div class="left-vote">
+                                                <span class="lbl-work">100% work</span>
+                                                <span>
+                                                    <span class="lbl-vote">63 <i class="icon iAddVote"></i></span>
+                                                    <span class="lbl-vote">10 <i class="icon iSubVote"></i></span>
+                                                </span>
+                                            </div>
+                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                        </div>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                                <div class="coupons-code-item right-action flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-01.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
+                                        <p class="rs coupon-desc">Must book by 11:59PM IST on 11/17/22. Travel completed by 3/30/24.</p>
+                                        <div class="bottom-action">
+                                            <div class="left-vote">
+                                                <span class="lbl-work">100% work</span>
+                                                <span>
+                                                    <span class="lbl-vote">63 <i class="icon iAddVote"></i></span>
+                                                    <span class="lbl-vote">10 <i class="icon iSubVote"></i></span>
+                                                </span>
+                                            </div>
+                                            <a class="btn btn-blue btn-view-coupon" href="#">VIEW <span>COUPON</span> CODE</a>
+                                        </div>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                            </div>
+                            <div class="pagination">
+                                <a class="page-nav" href="#"><i class="icon iPrev"></i></a>
+                                <a class="page-num active" href="#">1</a>
+                                <a class="page-num" href="#">2</a>
+                                <a class="page-num" href="#">3</a>
+                                <a class="page-num" href="#">4</a>
+                                <a class="page-num" href="#">5</a>
+                                <a class="page-nav" href="#"><i class="icon iNext"></i></a>
+                            </div>
+                        </div><!--end: .mod-coupons-code -->
+                    </div>
+                    <div class="grid_4 sidebar">
+                        <div class="mod-search block">
+                            <h3 class="title-block">Find your coupon code</h3>
+                            <div class="block-content">
+                                <label class="lbl-wrap" for="sys_search_coupon_code">
+                                    <input class="keyword-search" id="sys_search_coupon_code" type="search" placeholder="Search"/>
+                                    <input type="submit" class="btn-search" value="">
+                                </label>
+                            </div>
+                        </div><!--end: .mod-search -->
+
+                        <div class="mod-simple-coupon block">
+                            <h3 class="title-block">Latest coupon</h3>
+                            <div class="block-content">
+                                <div class="coupons-code-item simple flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-13.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                                <div class="coupons-code-item simple flex">
+                                    <div class="brand-logo thumb-left">
+                                        <div class="wrap-logo">
+                                            <div class="center-img">
+                                                <span class="ver_hold"></span>
+                                                <a href="#" class="ver_container"><img src="images/ex/04-14.jpg" alt="$BRAND_NAME"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right-content flex-body">
+                                        <p class="rs save-price"><a href="#">Save 10% Off a New Hotel Booking at Participating Price Match Guarantee Hotels</a></p>
+                                    </div>
+                                </div><!--end: .coupons-code-item -->
+                            </div>
+                        </div><!--end: .mod-simple-coupon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mod-footer">
+            <div class="footer-top">
+                <div class="grid_frame">
+                    <div class="container_grid clearfix">
+                        <div class="grid_6">
+                            <div class="company-info">
+                                <img src="images/logo-gray.png" alt="CouponDay"/>
+                                <p class="rs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p>
+                                <p class="rs">
+                                    Address <br />
+                                    Contd.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid_3">
+                            <div class="block social-link">
+                                <h3 class="title-block">Follow us</h3>
+                                <div class="block-content">
+                                    <ul class="rs">
+                                        <li>
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                            <a href="#" target="_blank">Our Facebook page</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa-brands fa-square-twitter"></i>
+                                            <a href="#" target="_blank">Follow our Tweets</a>
+                                        </li>
+                                        <li>
+                                            <i class = "fa-brands fa-square-instagram"></i>
+                                            <a href="#" target="_blank">Our Instagram Page</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!--end: Follow us -->
+                    </div>
+                </div>
+            </div><!--end: .foot-top-->
+            <div class="foot-copyright">
+                <div class="grid_frame">
+                    <div class="container_grid clearfix">
+                        <div class="left-link">
+                            <a href="index.html">Home</a>
+                            <a href="#">Term of conditions</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Support</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="copyright">
+                           <a href="#">VouX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.nouislider.js"></script>
+<script type="text/javascript" src="js/jquery.popupcommon.js"></script>
+<script type="text/javascript" src="js/html5lightbox.js"></script>
+
+<!--//js for responsive menu-->
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/mlpushmenu.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/create.placeholder.js"></script>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<script type="text/javascript" src="js/ie8.js"></script>
+<![endif]-->
+</body>
+
+</html>
